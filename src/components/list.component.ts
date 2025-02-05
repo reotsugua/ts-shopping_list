@@ -1,0 +1,1 @@
+const listaItens = document.getElementById('listaItens') as HTMLUListElement;
