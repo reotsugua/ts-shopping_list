@@ -4,33 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-    <script type="module" crossorigin src="./assets/index-CLAl9LzC.js"></script>
+    <title>Lista de Compras com TypeScript</title>
+    <script type="module" crossorigin src="./assets/index-DSu9U6Mw.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CkweRzzS.css">
   </head>
   <body>
-    <!-- <div id="app"></div> -->
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container mt-5">
+      <h1>Lista de Compras com TypeScript</h1>
+      <form id="formularioItem">
+          <div class="form-group">
+              <label for="item">Item:</label>
+              <input type="text" class="form-control" id="item" required>
           </div>
-          <div class="modal-body">
-            Conteúdo do modal...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+      </form>
+      <ul id="listaItens" class="list-group mt-3">
+          <!-- Os itens da lista serão inseridos aqui -->
+      </ul>
+  </div>
   </body>
 </html>
