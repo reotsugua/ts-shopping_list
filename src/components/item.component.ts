@@ -8,6 +8,7 @@ const htmlItem = (novoItem: Item): HTMLLIElement => {
     listItem.className = "list-group-item";
     listItem.textContent = novoItem.nome;
 
+    listItem.ondblclick = () => {console.log("Clicou", novoItem)};
     return listItem as HTMLLIElement;
 }
 
@@ -20,6 +21,7 @@ const ItemComponent = {
             nome: nomeItem,
         };
 
+        
         arrItens.push(novoItem);
         Armazenamento.updateItens(arrItens);
         return htmlItem(novoItem);

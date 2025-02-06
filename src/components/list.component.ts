@@ -18,6 +18,7 @@ const listaItens: HTMLUListElement = document.getElementById('listaItens') as HT
 
     arrItens.forEach(itemArmazenado => {
         const item: HTMLLIElement = ItemComponent.render(itemArmazenado)
+        // item.onclick = () => {console.log("Clicou", itemArmazenado.id)};
         fragment.appendChild(item);
     });
 
