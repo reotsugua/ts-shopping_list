@@ -10,15 +10,16 @@
     <div class="container mt-5">
       <h1>Lista de Compras com TypeScript</h1>
       <form id="formularioItem">
-          <div class="form-group">
-              <label for="item">Item:</label>
-              <input type="text" class="form-control" id="item" required>
-          </div>
-          <button type="submit" class="btn btn-primary">Adicionar</button>
+        <div class="form-group mb-3">
+          <label for="item">Item:</label>
+          <input type="text" class="form-control" id="item" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
       </form>
+      <h1 class="mt-3">Lista de itens</h1>
       <ul id="listaItens" class="list-group mt-3">
-          <!-- Os itens da lista serão inseridos aqui -->
       </ul>
+      <span class="empty-message ms-3">Sua lista está vazia.</span>
   </div>
     <script type="module" src="src/main.ts"></script>
   </body>
